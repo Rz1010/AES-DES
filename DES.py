@@ -139,7 +139,7 @@ while True :
     key = input("Please input hex (8 bytes) key : ")
     plain_text = input("Please input hex plain text: ")
 
-    if is_hex(key) and is_hex(plain_text) and len(key)==16 and len(plain_text) == 16 :
+    if is_hex(key) and is_hex(plain_text) and len(key)==16 and len(plain_text) % 16 ==0 :
         break
 print()
 
